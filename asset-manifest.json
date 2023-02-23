@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gihub.io/ShortenURL/static/css/main.cb01c119.css",
+    "main.js": "/gihub.io/ShortenURL/static/js/main.f365e13b.js",
+    "index.html": "/gihub.io/ShortenURL/index.html",
+    "main.cb01c119.css.map": "/gihub.io/ShortenURL/static/css/main.cb01c119.css.map",
+    "main.f365e13b.js.map": "/gihub.io/ShortenURL/static/js/main.f365e13b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb01c119.css",
+    "static/js/main.f365e13b.js"
+  ]
+}
