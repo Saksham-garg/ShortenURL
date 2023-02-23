@@ -1,6 +1,7 @@
 body{
   margin: 0px;
   padding: 0px;
+  font-family: Helvetica, sans-serif;
 }
 
 .nav--menu{
@@ -11,6 +12,7 @@ body{
   background-color: rgba(13, 9, 9, 0.764);
 }
 .nav--menu h1{
+  /* color: white; */
   font-size: 20px;
   padding-left: 10px;
 }
@@ -24,7 +26,7 @@ body{
 }
 
 .Main{
-  height: 90vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +34,7 @@ body{
 }
 
 .input--area{
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -47,11 +50,48 @@ body{
   border: none;
 }
 .Main button{
-  width: 14%;
   height: 30px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
   font-size: 14px;
   font-weight: bold;
+  padding: 5px 10px;
+}
+.cards{
+  height: 300px;
+  width: 300px;
+  color: black;
+}
+@media screen and (max-width:790px){
+  .Main button{
+    font-size: 12px;
+    height: 23px;
+  }
+  .input--area{
+    flex-direction: column;
+  }
+  .Main input{
+    width: 80%;
+    padding: 5px;
+  }
+  .get--url{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width:520px){
+  .Main button{
+    font-size: 12px;
+    height: 23px;
+  }
+  .input--area{
+    width: 80%;
+  }
+  .Main input{
+    width: 80%;
+    padding: 5px;
+  }
+  .get--url{
+    font-size: 12px;
+  }
 }
