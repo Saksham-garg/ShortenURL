@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/github.io/ShortenURL/static/css/main.cb01c119.css",
-    "main.js": "/github.io/ShortenURL/static/js/main.f365e13b.js",
-    "index.html": "/github.io/ShortenURL/index.html",
-    "main.cb01c119.css.map": "/github.io/ShortenURL/static/css/main.cb01c119.css.map",
-    "main.f365e13b.js.map": "/github.io/ShortenURL/static/js/main.f365e13b.js.map"
+    "main.css": "/ShortenURL/static/css/main.cb01c119.css",
+    "main.js": "/ShortenURL/static/js/main.f365e13b.js",
+    "index.html": "/ShortenURL/index.html",
+    "main.cb01c119.css.map": "/ShortenURL/static/css/main.cb01c119.css.map",
+    "main.f365e13b.js.map": "/ShortenURL/static/js/main.f365e13b.js.map"
   },
   "entrypoints": [
     "static/css/main.cb01c119.css",
