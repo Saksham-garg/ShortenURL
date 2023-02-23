@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
-
+import axios from "axios";
+import React,{ useState,useEffect } from "react";
+import "./App.css";
+import Navbar from './components/Navbar'
 function App() {
+  const [name, setname] = useState("");
+  const [url,setUrl] = useState("");
+
+  function save(){
+      const res = axios.post("https://gotiny.cc/api",{
+        input:name
+      }).then((res)=>{
+        console.log(res.data[0].code)
+        setUrl(res.data[0].code)
+      })
+      .catch((err)=>{
+        console.log(err);
+      })
+    }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar></Navbar>
+      <input
+        type="text"
+        value={name}
+        name="name"
+        onChange={(event) => {
+          setname(event.target.value);
+        }}
+      ></input>
+      <button type="button" onClick={save}>
+        Short URL
+      </button>
+      <div>{ <h1>{`https://gotiny.cc/${url}`}</h1>}</div>
     </div>
   );
 }
