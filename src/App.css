@@ -9,20 +9,21 @@ body{
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  background-color: rgba(13, 9, 9, 0.764);
+  background-color: rgb(70 226 226 / 76%);
 }
+
 .nav--menu h1{
-  /* color: white; */
   font-size: 20px;
   padding-left: 10px;
 }
+
 .nav--menu button{
   margin-right: 10px;
   width: 100px;
   height: 30px;
   border-radius: 5px;
-  background-color: aquamarine;
   border: none;
+  
 }
 
 .Main{
@@ -49,20 +50,88 @@ body{
   border-radius: 5px;
   border: none;
 }
-.Main button{
-  height: 30px;
-  border-radius: 5px;
-  border: none;
+
+button{
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
   cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
   font-size: 14px;
-  font-weight: bold;
-  padding: 5px 10px;
+  font-weight: 600;
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
 }
+
+button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+button:hover {
+  background-color: #2c974b;
+}
+
+button:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+button:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+/* About section  */
+
+.about--section{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .cards{
-  height: 300px;
-  width: 300px;
-  color: black;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  border-radius: 8px;
+  -webkit-box-shadow: -4px 7px 43px -2px rgba(0,0,0,0.61);
+  -moz-box-shadow: -4px 7px 43px -2px rgba(0,0,0,0.61);
+  box-shadow: -4px 7px 43px -2px rgba(0,0,0,0.61);
 }
+.cards img{
+  position: relative;
+  height: 100px;
+  width: 150px;
+  margin-top: 12px;
+}
+.cards p{
+  text-align: center;
+}
+
 @media screen and (max-width:790px){
   .Main button{
     font-size: 12px;
@@ -78,12 +147,21 @@ body{
   .get--url{
     font-size: 14px;
   }
+  .about--section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards{
+    width: 55%;
+    margin-bottom: 25px;
+  }
+  .cards img{
+    height: 70px;
+    width: 120px;
+  }
 }
 @media screen and (max-width:520px){
-  .Main button{
-    font-size: 12px;
-    height: 23px;
-  }
   .input--area{
     width: 80%;
   }
@@ -94,4 +172,16 @@ body{
   .get--url{
     font-size: 12px;
   }
+  .cards{
+    width: 65%;
+    margin-bottom: 20px;
+  }
+  .cards img{
+    height: 60px;
+    width: 105px;
+  }
+  .cards h2{
+    font-size: 20px;
+  }
 }
+

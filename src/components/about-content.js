@@ -1,4 +1,4 @@
-export const aboutContent = [
+export const aboutContent = [   
     {
         iurl : "send.png",
         title : "Fast",

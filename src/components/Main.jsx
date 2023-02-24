@@ -1,13 +1,12 @@
 import React from "react";
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 function Main() {
   const [name, setname] = useState("");
   const [url, setUrl] = useState("");
 
   function save() {
-    const res = axios
-      .post("https://gotiny.cc/api", {
+    const res = axios.post("https://gotiny.cc/api", {
         input: name,
       })
       .then((res) => {
@@ -30,7 +29,7 @@ function Main() {
             setname(event.target.value);
           }}
         ></input>
-        <button type="button" onClick={save}>
+        <button type="button" className="button-3" onClick={save}>
           Short URL
         </button>
       </div>
